@@ -12,7 +12,7 @@ export enum OpenAIModelID {
   GPT_3_5_AZ = 'gpt-35-turbo',
   GPT_4 = 'gpt-4',
   GPT_4_32K = 'gpt-4-32k',
-  CUSTOM_1 = 'acsmine-search',
+  CUSTOM_1 = 'acsmine-chat',
   CUSTOM_2 = 'summary-conversation-chat',
 }
 
@@ -46,7 +46,7 @@ export const OpenAIModels: Record<OpenAIModelID, OpenAIModel> = {
   },
   [OpenAIModelID.CUSTOM_1]: {
     id: OpenAIModelID.CUSTOM_1,
-    name: 'SIMPLE',
+    name: 'ACSMINE',
     maxLength: 12000,
     tokenLimit: 3000,
   },
